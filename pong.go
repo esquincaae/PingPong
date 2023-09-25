@@ -237,7 +237,7 @@ func run() {
 		if playerScore >= 5 || aiScore >= 5 {
             win.Clear(colornames.Black)
 
-            winnerTxt := text.New(pixel.V(width/2-40, height/2), text.NewAtlas(basicfont.Face7x13, text.ASCII))
+            winnerTxt := text.New(pixel.V(width/2-200, height/2), text.NewAtlas(basicfont.Face7x13, text.ASCII))
             if playerScore >= 5 {
                 fmt.Fprintf(winnerTxt, "Ganador: Jugador 1")
             } else {
